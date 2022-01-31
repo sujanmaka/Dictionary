@@ -1,0 +1,14 @@
+.div1 {
+    font-weight: bold;
+    background-color: rgba(233, 227, 227, 0.788);
+    font-size: 50px;
+}
+
+.div2 {
+    background-color: rgb(216, 230, 224);
+    font-size: 25px;
+}
+
+#input1 {
+    margin-right: 5px;
+}
