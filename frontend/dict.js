@@ -1,6 +1,11 @@
 $(function() {
     $("#search").click(function() {
-        let url = "http://localhost:8080/?value=" + $("#input1").val();
+        let search = $("#input1").val();
+        if (!search) {
+            $("ol").empty();
+            return;
+        }
+        let url = "http://localhost:8080/?value=" + search;
         console.log(url);
 
         $.get(url)
