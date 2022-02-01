@@ -1,8 +1,9 @@
 $(function() {
     $("#search").click(function() {
+        $("ol").empty();
+
         let search = $("#input1").val();
         if (!search) {
-            $("ol").empty();
             return;
         }
         let url = "http://localhost:8080/?value=" + search;
