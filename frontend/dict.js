@@ -6,11 +6,13 @@ $(function() {
         if (!search) {
             return;
         }
-        let url = "http://localhost:8080/?value=" + search;
-        console.log(url);
 
-        $.get(url)
-            .done(success)
+        $.ajax("http://localhost:8080", {
+                "type": "GET",
+                "data": {
+                    "value": search
+                },
+            }).done(success)
             .fail(failure);
 
     });
